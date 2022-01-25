@@ -1,0 +1,27 @@
+{
+  "name": "first-repository",
+  "version": "1.0.0",
+  "description": "first-monorepo",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test --workspaces",
+    "postinstall": "npm run test --workspaces"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lromap/first-repository.git"
+  },
+  "author": "GBU",
+  "license": "ISC",
+  "workspaces": [
+    "workspaces/*"
+  ],
+  "engines": {
+    "node": ">=14.17.0",
+    "npm": ">=8.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/lromap/first-repository/issues"
+  },
+  "homepage": "https://github.com/lromap/first-repository#readme"
+}
